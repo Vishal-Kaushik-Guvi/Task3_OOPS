@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BookManagementSystem {
     public static void main(String[] args) {
+    // Object of class Book
         Book newBook;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the capacity of the library: ");
@@ -28,7 +29,7 @@ public class BookManagementSystem {
             newBook = new Book(bookID, bookTitle, isAvailable, bookAuthor);
             library.addBook(newBook);
         }
-
+// Giving Options to users to choose any method to perform
         int choice;
         do {
             System.out.println("\nMenu:");
